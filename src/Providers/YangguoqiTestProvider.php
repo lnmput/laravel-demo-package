@@ -27,5 +27,6 @@ class YangguoqiTestProvider extends ServiceProvider
         $this->app->singleton('ucword', function () {
            return new UcWord();
         });
+        include dirname(dirname(__FILE__)).'/routes.php';
     }
 }
