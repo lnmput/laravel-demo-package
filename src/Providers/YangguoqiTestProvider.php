@@ -29,6 +29,10 @@ class YangguoqiTestProvider extends ServiceProvider
         });
         include dirname(dirname(__FILE__)).'/routes.php';
     
-        $this->loadViewsFrom(dirname(dirname(__FILE__)).'/Views', 'mview');
+        $this->loadViewsFrom(dirname(dirname(__FILE__)).'/Views', 'test');
+    
+        $this->publishes([
+            dirname(dirname(__FILE__)).'/Views' => base_path('resources/views/vendor/test'),
+        ]);
     }
 }

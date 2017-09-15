@@ -6,6 +6,6 @@ class UcWord
 {
     public function make($word='yangzie')
     {
-        return view('mview::uc', ['ago' => $word, 'now' => ucwords($word)]);
+        return view('test::uc', ['ago' => $word, 'now' => ucwords($word)]);
     }
 }
