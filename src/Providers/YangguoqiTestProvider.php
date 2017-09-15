@@ -33,6 +33,7 @@ class YangguoqiTestProvider extends ServiceProvider
     
         $this->publishes([
             dirname(dirname(__FILE__)).'/Views' => base_path('resources/views/vendor/test'),
+            dirname(dirname(__FILE__)).'/Config/uc.php' => config_path('uc.php')
         ]);
     }
 }
