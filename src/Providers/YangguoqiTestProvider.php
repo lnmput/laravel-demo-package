@@ -28,5 +28,7 @@ class YangguoqiTestProvider extends ServiceProvider
            return new UcWord();
         });
         include dirname(dirname(__FILE__)).'/routes.php';
+    
+        $this->loadViewsFrom(dirname(dirname(__FILE__)).'/Views', 'mview');
     }
 }
