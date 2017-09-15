@@ -1,0 +1,18 @@
+{
+    "name": "yangguoqi/test",
+    "description": "a demo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "杨国奇",
+            "email": "lnmput@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+      "psr-4": {
+        "Yangguoqi\\Test\\" : "src/"
+      }
+    },
+    "require": {}
+}
